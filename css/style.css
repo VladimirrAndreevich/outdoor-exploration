@@ -84,3 +84,30 @@ a {
 .header__btn-buy {
   margin-right: 20px;
 }
+
+/* offer */
+.offer {
+  padding-top: 237px;
+  padding-bottom: 227px;
+
+  background-image: url("../img/offer-background.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.offer__title {
+  width: 416px;
+  margin-bottom: 9px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 48px;
+  line-height: 1.2em;
+  color: #ffffff;
+}
+.offer__description {
+  width: 495px;
+
+  font-size: 17px;
+  line-height: 1.48em;
+  color: #caccd1;
+}
