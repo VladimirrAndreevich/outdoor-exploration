@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
 
 /* common */
+* {
+  box-sizing: border-box;
+}
+
 .body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -175,4 +179,70 @@ a {
 .about__description {
   width: 395px;
   margin-bottom: 32px;
+}
+
+/* products */
+.products {
+  padding-top: 119px;
+  padding-bottom: 100px;
+
+  background: #fafafc;
+}
+
+.products__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__title,
+.products__description {
+  text-align: center;
+}
+
+.products__description {
+  margin-bottom: 71px;
+}
+
+.products__items {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+
+  width: 100%;
+  min-height: 551px;
+}
+
+.products__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 275px;
+  width: 389px;
+  padding-top: 50px;
+  padding-bottom: 59px;
+
+  text-align: center;
+}
+
+.product-item__img {
+  margin-bottom: 13px;
+}
+
+.product-item__title {
+  margin-bottom: 9px;
+
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+.product-item__description {
+  width: 287px;
+
+  font-size: 14px;
+  line-height: 1.4em;
 }
