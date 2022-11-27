@@ -93,12 +93,31 @@ a {
 .section-link::after {
   content: "";
 
+  /* display: inline-block;
+
+  width: 20px;
+  height: 10px; */
+
+  margin-left: 6px;
+  transition: margin-left 0.3s ease;
+
+  /* background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+
+.section-link:hover::after {
+  margin-left: 10px;
+}
+
+.link-arrow::after {
+  content: "";
+
   display: inline-block;
 
   width: 20px;
   height: 10px;
-
-  margin-left: 6px;
 
   background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
@@ -245,4 +264,141 @@ a {
 
   font-size: 14px;
   line-height: 1.4em;
+}
+
+/* for you */
+.for-you {
+  padding: 100px 0;
+}
+
+.for-you__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 0 15px;
+}
+
+.for-you__title,
+.for-you__description {
+  text-align: center;
+}
+
+.for-you__description {
+  margin-bottom: 21px;
+}
+
+.for-you__items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+
+  width: 1168px;
+  height: 963px;
+  margin-bottom: 20px;
+}
+
+.for-you__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 379px;
+  height: 473px;
+  padding-top: 39px;
+  border-radius: 10px;
+
+  color: #575445;
+
+  background-position: center center;
+  background-size: 379px;
+
+  filter: grayscale(100);
+  transition-property: filter, background-size;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.for-you__item:hover {
+  filter: grayscale(0);
+  background-size: 390px;
+  cursor: pointer;
+}
+
+.for-you__item:hover .for-you__item-link::after {
+  margin-left: 8px;
+}
+
+/* .for-you__item:nth-child(n + 4) {
+  margin-top: 16px;
+}
+
+.for-you__item:not(:nth-child(3n)) {
+  margin-right: 16px;
+} */
+
+.for-you__item-heading {
+  font-family: "Roboto", sans-serif;
+  font-size: 28px;
+  line-height: 1.2em;
+
+  text-align: center;
+}
+.for-you__item-description {
+  width: 252px;
+  margin-bottom: 20px;
+
+  font-size: 16px;
+  line-height: 1.4em;
+
+  text-align: center;
+}
+.for-you__item-link {
+  font-size: 15px;
+  line-height: 1.4em;
+  color: #575445;
+}
+
+.for-you__item-link::after {
+  content: "";
+
+  /* display: inline-block;
+
+  width: 20px;
+  height: 10px; */
+
+  margin-left: 4px;
+
+  transition: margin-left 0.5s ease;
+
+  /* background-image: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover; */
+}
+
+.img-accessories {
+  background-image: url("../img/for-you/compass.jpg");
+}
+
+.img-apparel {
+  background-image: url("../img/for-you/apparel.jpg");
+}
+
+.img-climbing-gear {
+  background-image: url("../img/for-you/climbing-gear.jpg");
+}
+
+.img-headwear {
+  background-image: url("../img/for-you/headwear.jpg");
+}
+
+.img-hiking-gear {
+  background-image: url("../img/for-you/hiking-gear.jpg");
+}
+
+.img-jackets {
+  background-image: url("../img/for-you/jackets.jpg");
 }
