@@ -450,6 +450,82 @@ a {
   background-image: url("../img/for-you/jackets.jpg");
 }
 
+/* pre-shop */
+.pre-shop {
+  position: relative;
+
+  height: 600px;
+
+  background-image: url("../img/pre-shop.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.pre-shop__info {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  align-items: center;
+
+  /* width: 615px; */
+  height: 48px;
+  padding: 0 22px;
+  border-radius: 16px;
+
+  font-size: 12px;
+  line-height: 1em;
+  color: #ffffff;
+
+  background-color: #292c32;
+}
+
+.pre-shop__item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pre-shop__item:not(:last-child) {
+  margin-right: 21px;
+}
+
+.pre-shop__item::before {
+  content: "";
+
+  display: inline-block;
+
+  width: 16px;
+  height: 16px;
+
+  margin-right: 8px;
+
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.photographer::before {
+  height: 13px;
+  background-image: url("../img/pre-shop/Camera-Icon.svg");
+}
+
+.member::before {
+  position: relative;
+  bottom: 3px;
+
+  width: 15px;
+  background-image: url("../img/pre-shop/Person-Icon.svg");
+}
+
+.location::before {
+  background-image: url("../img/pre-shop/Location-Icon.svg");
+}
+
 /* check-out */
 .check-out {
   padding: 100px 0;
