@@ -586,3 +586,30 @@ a {
 .guidess__main-link {
   align-self: center;
 }
+
+/* magazine */
+.magazine {
+  padding: 100px 0;
+}
+
+.magazine__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.magazine__info {
+  width: 400px;
+  margin-left: 104px;
+}
+
+.magazine__description {
+  width: auto;
+  margin-bottom: 20px;
+}
+
+.magazine__main-link::after {
+  content: "";
+
+  margin-left: 4px;
+}
