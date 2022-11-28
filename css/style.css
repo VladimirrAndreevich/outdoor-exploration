@@ -1,5 +1,6 @@
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Roboto&display=swap");
 
 /* common */
 * {
@@ -54,15 +55,61 @@ a {
 }
 
 .btn {
-  min-width: 125px;
-  padding: 10px 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  border: none;
+  min-width: 125px;
+  height: 44px;
+  padding: 0 18px;
+
   border-radius: 6px;
+  border: 2px solid #575445;
 
   font-size: 16px;
   line-height: 1.37em;
   color: #ffffff;
+
+  background-color: #575445;
+
+  transition-property: border, color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btn:hover {
+  border: 2px solid #575445;
+
+  color: #575445;
+
+  background-color: #fff;
+}
+
+.btn_light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 111px;
+  height: 44px;
+  border-radius: 6px;
+  border: 2px solid #fff;
+
+  font-size: 15px;
+  line-height: 1.49em;
+  color: #575445;
+
+  background-color: #fff;
+
+  transition-property: border, color, background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+}
+
+.btn_light:hover {
+  border: 2px solid #fff;
+
+  color: #fff;
 
   background-color: #575445;
 }
@@ -401,6 +448,43 @@ a {
 
 .img-jackets {
   background-image: url("../img/for-you/jackets.jpg");
+}
+
+/* check-out */
+.check-out {
+  padding: 100px 0;
+  background-color: #375c58;
+}
+
+.check-out__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.check-out__name {
+  font-size: 14px;
+  line-height: 1.4em;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fafafc;
+}
+
+.check-out__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  line-height: 1.2em;
+  color: #e6b939;
+}
+
+.check-out__description {
+  width: 538px;
+  margin-bottom: 21px;
+
+  font-size: 16px;
+  line-height: 1.2em;
+  color: #fafafc;
+  text-align: center;
 }
 
 /* guides */
